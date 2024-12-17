@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Travel Blog</title>
+  <!-- import Open Sans font -->
+</head>
+<body>
+  <!-- Use https://picsum.photos to display images -->
+
+  <!-- HEADER SECTION -->
+   <header class="header">
+    <div class="header__content">
+      <a href="" class="header__title"><span>TRAVEL</span>BLOG</a>
+        <nav>
+          <ul>
+            <li>
+              <a href="#articles">
+                Articles
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Sign In
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+   </header>
+
+   <!-- MAIN SECTION -->
+   <main>
+    <section class="hero">
+      <div class="overlay"></div>
+      <div class="hero__content">
+        <h1>Welcome To Travel Blog: <br /> Insights, Inspiration, and More!</h1>
+        <div class="divider"></div>
+
+        <p>
+          Insights, Inspiration, and practical advice on a wide range of
+          topics. Whether you're looking for the latest tresnds, expert tips,
+          or simply a bit of inspiration to brighten your day!
+        </p>
+
+        <a href="#articles">
+          Scroll to articles
+        </a>
+      </div>
+
+    </section>
+
+    <section class="articles" id="articles">
+      <h2>Latest articles</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+      <br />
+      <br />
+      <br />
+
+      <!-- tabbing -->
+      <ul class="articles__tabs">
+        <li class="active">All</li>
+        <li>Adventure</li>
+        <li>Travel</li>
+        <li>Fashion</li>
+        <li>Technology</li>
+        <li>Branding</li>
+      </ul>
+
+      <!-- article cards -->
+
+      <div class="articles__cards">
+        <div class="articles__card">
+            <a href="">
+            <div class="articles__cardImg">
+              <img src="/assets/images/blog_image_1.png" alt="Article-Card" />
+            </div>
+            <div class="articles__cardContent">
+              <p>08.08.2021</p>  <!-- dates -->
+              <h3>Lorem ispum dolor sit amet ipsum dolor ipsum</h3>
+              <p>Why do programmers prefer dark mode ? Because light attracts bugs! Lorem ipsum dolor sit amet hue hue</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="articles__card">
+            <a href="">
+            <div class="articles__cardImg">
+              <img src="/assets/images/blog_image_2.png" alt="Article-Card" />
+            </div>
+            <div class="articles__cardContent">
+              <p>08.08.2021</p>  <!-- dates -->
+              <h3>Lorem ispum dolor sit</h3>
+              <p>Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.</p>
+            </div>
+          </a>
+        </div>
+          
+        <div class="articles__card">
+          <a href="">
+            <div class="articles__cardImg">
+              <img src="/assets/images/blog_image_3.png" alt="Article-Card" />
+            </div>
+            <div class="articles__cardContent">
+              <p>08.08.2021</p>  <!-- dates -->
+              <h3>Lorem ispum dolor sit amet ipsum dolor ipsum</h3>
+              <p>Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="articles__card">
+            <a href="">
+            <div class="articles__cardImg">
+              <img src="/assets/images/blog_image_4.png" alt="Article-Card" />
+            </div>
+            <div class="articles__cardContent">
+              <p>08.08.2021</p>  <!-- dates -->
+              <h3>Lorem ispum dolor sit amet ipsum dolor ipsum</h3>
+              <p>Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- end article cards -->
+
+    </section>
+
+    <section class="contact">
+      <div class="">
+
+        <h2>Sign in form</h2>
+        
+        <form class="contact__form" action="#">
+          <fieldset>
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name"/>
+            </div>
+            
+            <div>
+              <label for="surname">Surname</label>
+              <input type="text" id="surname" name="surname" placeholder="Your surname"/>
+            </div>
+          </fieldset>
+          
+          <fieldset>
+            <div>
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="example@email.com"/>
+            </div>
+            
+            <div>
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="**********"/>
+            </div>
+          </fieldset>
+          
+          <fieldset>
+            <div>
+              <label for="content">Content</label>
+              <textarea name="content" id="content" rows="6" cols="40" placeholder="Message"></textarea>
+            </div>
+            
+            <div>
+              <span>
+                <label for="consent_one">Consent one</label>
+                <input type="radio" id="consent_one" name="consent">
+              </span>
+
+              <span>
+                <label for="consent_two">Consent two (pre checked)</label>
+                <input type="radio" id="consent_two" name="consent" checked>
+              </span>
+
+              <button type="submit" class="button">Submit</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+   </main>
+
+
+   <!-- FOOTER SECTION -->
+   <footer class="footer">
+
+    <div class="footer__grid">
+      <div class="footer__contact">
+        <h4>Contact the Publisher</h4>
+        <address>
+          <a href="mailto:example@email.com">example@email.com</a>
+          <a href="tel:+944450904505">+944 450 904 505</a>
+        </address>
+      </div>
+
+      <div class="footer__links">
+        <h4>Explore</h4>
+        <nav>
+          <ul>
+            <li>
+              <a href="/about.html">About</a>
+              <a href="/partners.html">Partners</a>
+              <a href="/jobs.html">Job Opportunities</a>
+              <a href="/ads.html">Advertise</a>
+              <a href="/membership.html">Membership</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__address">
+        <h4>Headquarter</h4>
+        <address>
+          <p>1999 Middleville, <br /> NY 1001, <br /> New York USA</p>
+        </address>
+      </div>
+    </div>
+
+    <div class="footer__closer">
+      <div class="footer__closerContent">
+        <p><b> 2024 | Travel Blog </b></p>
+        <button>Subscribe Now</button>
+      </div>
+    </div>
+
+  </footer>
+</body>
+

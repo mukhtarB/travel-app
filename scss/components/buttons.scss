@@ -1,0 +1,22 @@
+.button {
+  padding: 10px;
+  min-width: 180px;
+  width: 75%;
+  font-weight: bold;
+  background-color: $dark-primary;
+  text-align: center;
+  color: black;
+  transition: 300ms;
+  cursor: pointer;
+  outline: none;
+  border: none;
+
+  &:hover {
+    background-color: $light;
+    border: 1px solid $dark-primary;
+  }
+
+  @include media($mobile) {
+    width: 100%;
+  }
+}

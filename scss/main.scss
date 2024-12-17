@@ -1,0 +1,14 @@
+@import "settings/reset";
+@import "settings/mixins";
+@import "settings/fonts";
+@import "settings/variables";
+@import "settings/elements";
+
+// components
+@import "components/header";
+@import "components/buttons";
+@import "components/footer";
+
+// pages
+@import "pages/homepage";
+

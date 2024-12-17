@@ -1,0 +1,50 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  color: $light;
+  background-color: rgba(black, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 10;
+
+  .header__content {
+    @extend .container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  @include media($mobile){
+    padding: 14px 10px;
+  }
+
+  // header navs & links
+  a {
+    color: $light;
+
+    &:hover:not(.header__title) {
+      color: $dark-primary;
+    }
+  }
+  
+  nav {
+    ul {
+      display: flex;
+      
+      li {
+        padding: 0px 5px;
+      }
+    }
+  }
+}
+
+.header__title {
+  font-size: 20px;
+  font-weight: 700;
+
+  span {
+    color: $primary;
+  }
+}
