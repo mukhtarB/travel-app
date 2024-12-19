@@ -136,6 +136,10 @@ a {
         transition:transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         box-shadow: 0px 0px 1px 2px $dark-primary;
     }
+
+    @include media($mobileSmall){
+        width: 90%;
+    }
 }
 
 // SECTION 3: contact
@@ -153,6 +157,10 @@ a {
         @extend .container;
         text-align: left;
         padding: 30px;
+
+        @include media($mobileSmall){
+            padding: 30px 0;
+        }
     }
 
     fieldset {
@@ -215,6 +223,24 @@ a {
             overflow: hidden;
             position: absolute;
             display: inline;
+
+            &:hover + .customlabel {
+                cursor: pointer;
+            }
+
+            &:checked + .customlabel,
+            &:focus + .customlabel {
+                color: $dark-primary;
+            }
+
+            &:checked + .customlabel::before {
+                background: $dark-primary;
+                border-color: $black;
+            }
+
+            &:focus + .customlabel::before {
+                border-color: $black;
+            }
         }
 
         .customlabel {
@@ -229,24 +255,6 @@ a {
             border: solid 1px $black;
             margin-right: 0.5em;
             transition: border ease-in 150ms, box-shadow ease-in 150ms;
-        }
-
-        input[type="radio"]:hover + .customlabel {
-            cursor: pointer;
-        }
-
-        input[type="radio"]:checked + .customlabel,
-        input[type="radio"]:focus + .customlabel {
-            color: $dark-primary;
-        }
-
-        input[type="radio"]:checked + .customlabel::before {
-            background: $dark-primary;
-            border-color: $black;
-        }
-
-        input[type="radio"]:focus + .customlabel::before {
-            border-color: $black;
         }
 
     }

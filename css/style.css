@@ -176,7 +176,7 @@ ul {
 }
 
 .footer__closer {
-  background-color: rgba(55, 51, 51, 0.768627451);
+  background-color: rgba(63, 68, 84, 0.7411764706);
   margin-top: 30px;
 }
 .footer__closer .footer__closerContent {
@@ -324,6 +324,11 @@ a {
   transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   box-shadow: 0px 0px 1px 2px rgb(212, 163, 115);
 }
+@media (max-width: 440px) {
+  .articles__card {
+    width: 90%;
+  }
+}
 
 .contact {
   background-color: #EFEFEF;
@@ -336,6 +341,11 @@ a {
 .contact form {
   text-align: left;
   padding: 30px;
+}
+@media (max-width: 440px) {
+  .contact form {
+    padding: 30px 0;
+  }
 }
 .contact fieldset {
   display: flex;
@@ -393,6 +403,19 @@ a {
   position: absolute;
   display: inline;
 }
+.contact fieldset input[type=radio]:hover + .customlabel {
+  cursor: pointer;
+}
+.contact fieldset input[type=radio]:checked + .customlabel, .contact fieldset input[type=radio]:focus + .customlabel {
+  color: rgb(212, 163, 115);
+}
+.contact fieldset input[type=radio]:checked + .customlabel::before {
+  background: rgb(212, 163, 115);
+  border-color: #000;
+}
+.contact fieldset input[type=radio]:focus + .customlabel::before {
+  border-color: #000;
+}
 .contact fieldset .customlabel {
   display: inline-flex;
   align-items: center;
@@ -404,20 +427,6 @@ a {
   border: solid 1px #000;
   margin-right: 0.5em;
   transition: border ease-in 150ms, box-shadow ease-in 150ms;
-}
-.contact fieldset input[type=radio]:hover + .customlabel {
-  cursor: pointer;
-}
-.contact fieldset input[type=radio]:checked + .customlabel,
-.contact fieldset input[type=radio]:focus + .customlabel {
-  color: rgb(212, 163, 115);
-}
-.contact fieldset input[type=radio]:checked + .customlabel::before {
-  background: rgb(212, 163, 115);
-  border-color: #000;
-}
-.contact fieldset input[type=radio]:focus + .customlabel::before {
-  border-color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */
